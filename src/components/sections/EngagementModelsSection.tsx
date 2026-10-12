@@ -18,7 +18,7 @@ export const EngagementModelsSection: React.FC = () => {
   }
 
   return (
-    <section className="py-24 bg-slate-50 border-b border-slate-200 relative">
+    <section id="pricing" className="py-24 bg-slate-50 border-b border-slate-200 relative scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

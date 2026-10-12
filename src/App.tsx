@@ -4,7 +4,6 @@ import { HeroSection } from './components/sections/HeroSection'
 import { IndustriesSection } from './components/sections/IndustriesSection'
 import { ProblemOutcomeSection } from './components/sections/ProblemOutcomeSection'
 import { SolutionsSection } from './components/sections/SolutionsSection'
-import { HowItWorksSection } from './components/sections/HowItWorksSection'
 import { DemoShowcaseSection } from './components/sections/DemoShowcaseSection'
 import { IntegrationsSection } from './components/sections/IntegrationsSection'
 import { SecurityComplianceSection } from './components/sections/SecurityComplianceSection'
@@ -32,13 +31,10 @@ export const App: React.FC = () => {
         {/* 3. The Problem & Outcome */}
         <ProblemOutcomeSection />
 
-        {/* 4. Solutions */}
+        {/* 4. What We Build / 6 Services */}
         <SolutionsSection />
 
-        {/* 5. How It Works (4-Phase Engineering Roadmap) */}
-        <HowItWorksSection />
-
-        {/* 6. Interactive Live Demo Showcase */}
+        {/* 5. Interactive Live Demo Showcase */}
         <DemoShowcaseSection />
 
         {/* 7. Integrations */}

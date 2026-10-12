@@ -4,9 +4,10 @@ export interface LeadSubmission {
   id?: string
   name: string
   email: string
-  phone: string
-  company: string
-  industry: string
+  phone?: string
+  company?: string
+  industry?: string
+  interestedIn?: string
   message: string
   source?: string
   created_at?: string
@@ -31,8 +32,9 @@ export async function submitLead(leadData: Omit<LeadSubmission, 'id' | 'created_
     ...leadData,
     fullName: leadData.name,
     workEmail: leadData.email,
-    phoneNumber: leadData.phone,
-    companyName: leadData.company,
+    phoneNumber: leadData.phone || '',
+    companyName: leadData.company || '',
+    interestedIn: leadData.interestedIn || leadData.industry || 'Voice AI agent',
     source: leadData.source || 'website_landing_page',
     created_at: timestamp,
     submittedAt: timestamp,

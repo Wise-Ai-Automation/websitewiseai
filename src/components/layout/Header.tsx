@@ -83,10 +83,9 @@ export const Header: React.FC = () => {
             <a
               href="#book-demo"
               onClick={(e) => scrollToSection(e, '#book-demo')}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-150 shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-[#00c5c8] hover:bg-[#00d8db] transition-all duration-150 shadow-md shadow-cyan-500/20 active:scale-[0.98]"
             >
-              <span>Book a Demo</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              <span>Book a free call</span>
             </a>
           </div>
 
@@ -95,9 +94,9 @@ export const Header: React.FC = () => {
             <a
               href="#book-demo"
               onClick={(e) => scrollToSection(e, '#book-demo')}
-              className="px-4 py-2 text-xs font-bold rounded-xl bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-500/20"
+              className="px-4 py-2 text-xs font-bold rounded-full bg-[#00c5c8] text-slate-950 hover:bg-[#00d8db] shadow-sm"
             >
-              Book Demo
+              Book a call
             </a>
             <button
               type="button"

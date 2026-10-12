@@ -98,16 +98,17 @@ export interface FaqItem {
 
 export const siteContent = {
   brand: {
-    name: 'WISE AI',
-    tagline: 'Custom Voice AI Agents for Canadian & North American Businesses',
-    location: 'Ontario, Canada 🇨🇦',
+    name: 'Wise AI Automation',
+    tagline: 'AI Systems That Do the Work For You',
+    location: 'Toronto, Ontario — serving all of Canada 🇨🇦',
     contact: {
-      phone: '+1 226 201 0271',
-      displayPhone: '+1 (226) 201-0271',
-      whatsappUrl: 'https://wa.me/12262010271?text=Hi%20WISE%20AI%2C%20I%27d%20like%20to%20know%20more%20about%20your%20Voice%20AI%20solutions',
-      whatsappMessage: 'Hi WISE AI, I\'d like to know more about your Voice AI solutions',
-      email: 'contact@wiseai.dev',
-      operatingHours: 'Monday – Friday, 8:00 AM – 7:00 PM EST (24/7 Agent Operation)',
+      phone: '+1 416 555 0142',
+      displayPhone: '+1 (416) 555-0142',
+      alternatePhone: '+1 (226) 201-0271',
+      whatsappUrl: 'https://wa.me/12262010271?text=Hi%20Wise%20AI%20Automation%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call',
+      whatsappMessage: 'Hi Wise AI Automation, I\'d like to book a free strategy call',
+      email: 'hello@wiseaiautomation.ca',
+      operatingHours: 'Monday – Friday, 8:00 AM – 7:00 PM EST (24/7 AI System Operation)',
     },
     meta: {
       copyrightYear: 2026,
@@ -146,18 +147,18 @@ export const siteContent = {
   ] as ComplianceBadge[],
 
   nav: [
-    { label: 'Solutions', href: '#solutions' },
+    { label: 'Services', href: '#services' },
     { label: 'Industries', href: '#industries' },
-    { label: 'How it works', href: '#how-it-works' },
     { label: 'Live Demos', href: '#demo-showcase' },
-    { label: 'Security & Integrations', href: '#integrations' },
+    { label: 'Integrations', href: '#integrations' },
+    { label: 'Pricing', href: '#pricing' },
     { label: 'FAQ', href: '#faq' },
   ],
 
   hero: {
     headline: 'Voice agents that sound human and work like your best employee.',
     subheadline: 'WISE AI builds custom voice AI agents that answer every call, qualify every lead and book every appointment, 24/7, in your brand\'s voice.',
-    primaryCta: 'Book a free demo',
+    primaryCta: 'Book a free call',
     secondaryCta: 'View live call simulation',
     trustPoints: [
       'Live in 7-14 days',
@@ -297,54 +298,60 @@ export const siteContent = {
     ] as StatItem[],
   },
 
+  whatWeBuild: {
+    eyebrow: 'WHAT WE BUILD',
+    headline: 'AI systems that do the work for you',
+    subheadline: 'From the first phone ring to the final invoice, we automate the busywork so your team can focus on customers.',
+  },
+
   solutions: [
     {
-      id: 'inbound',
-      title: 'Inbound Call Answering',
-      badge: 'Always-On',
+      id: 'voice-ai',
+      title: 'Voice AI Agents',
+      badge: '24/7 Phone Answering',
       iconName: 'PhoneCall',
-      description: 'Answer every inbound call on the first ring. Greet callers warmly, understand their intent, answer complex questions, and route urgent requests.',
-      benefits: ['Instant pick-up on first ring', 'Consistent company greeting', 'Custom business knowledge base']
+      description: 'AI phone agents that answer every call, book appointments, and qualify leads — 24/7, in English and French.',
+      benefits: ['Instant 1st ring pick-up', 'Appointment booking & triage', 'Bilingual English & French support']
     },
     {
-      id: 'outbound',
-      title: 'Outbound Calling and Follow-ups',
-      badge: 'Proactive',
-      iconName: 'PhoneOutgoing',
-      description: 'Engage web leads within 30 seconds of submission, confirm upcoming appointments, follow up on quotes, and re-engage dormant accounts.',
-      benefits: ['Instant web-form to phone callback', 'Automated appointment reminders', 'Respectful opt-out and DNC compliance']
+      id: 'ai-automation',
+      title: 'AI Automation',
+      badge: 'End-to-End Workflow',
+      iconName: 'Workflow',
+      description: 'Automate repetitive work: follow-ups, invoicing, data entry, and CRM updates across the tools you already use.',
+      benefits: ['CRM data entry & syncing', 'Automated follow-ups & billing', 'Cross-tool custom webhooks']
     },
     {
-      id: 'booking',
-      title: 'Appointment Booking',
-      badge: 'High ROI',
-      iconName: 'CalendarCheck',
-      description: 'Check real-time calendar availability, negotiate suitable time slots with the caller, confirm details, and write directly into your scheduler.',
-      benefits: ['Two-way calendar sync', 'Conflict detection & rescheduling', 'Instant SMS confirmation']
+      id: 'ai-chatbots',
+      title: 'AI Chatbots',
+      badge: 'On-Site Lead Capture',
+      iconName: 'MessageSquare',
+      description: 'Website chatbots trained on your business that answer questions, capture leads, and hand off to your team.',
+      benefits: ['Trained on your knowledge base', 'Captures qualified inbound leads', 'Warm live handoff to staff']
     },
     {
-      id: 'qualification',
-      title: 'Lead Qualification',
-      badge: 'Pipeline Boost',
-      iconName: 'CheckCircle2',
-      description: 'Ask customized qualifying questions, evaluate budget and urgency, filter spam callers, and pass high-value prospects directly to your sales team.',
-      benefits: ['Custom scoring criteria', 'CRM enrichment in real-time', 'Warm transfer for VIP buyers']
+      id: 'scheduling-apps',
+      title: 'Scheduling Apps',
+      badge: 'Zero Double-Bookings',
+      iconName: 'Calendar',
+      description: 'Smart booking systems with reminders, time-zone handling, and calendar sync — built for your workflow.',
+      benefits: ['Real-time 2-way calendar sync', 'Automated SMS/email reminders', 'Custom buffer times & time zones']
     },
     {
-      id: 'support',
-      title: 'Customer Support',
-      badge: 'Resolution',
-      iconName: 'Headphones',
-      description: 'Resolve repetitive questions, check order statuses, explain service policies, and open support tickets without keeping callers on hold.',
-      benefits: ['Knowledge base integration', 'Live ticket creation', 'Empathetic issue escalation']
+      id: 'website-creation',
+      title: 'Website Creation',
+      badge: 'Conversion-Optimized',
+      iconName: 'Globe',
+      description: 'Fast, modern websites designed to convert visitors into customers, with AI built in from day one.',
+      benefits: ['High-converting modern UI', 'Built-in AI lead capture & forms', 'Sub-second page load performance']
     },
     {
-      id: 'multilingual',
-      title: 'Multilingual Voice Agents',
-      badge: 'Global Reach',
-      iconName: 'Languages',
-      description: 'Serve callers in English, French (Canadian & European), Spanish, and over 30 languages with authentic regional accents and seamless language switching.',
-      benefits: ['Automatic language detection', 'Native accent cadence', 'Broad bilingual Canadian reach']
+      id: 'app-development',
+      title: 'App Development',
+      badge: 'Web & Mobile',
+      iconName: 'Smartphone',
+      description: "Custom web and mobile apps that put your business in your customers' pockets.",
+      benefits: ['Custom client & staff portals', 'iOS & Android responsive apps', 'Secure cloud backends & APIs']
     },
   ] as SolutionItem[],
 
@@ -732,33 +739,40 @@ export const siteContent = {
   ] as FaqItem[],
 
   finalCta: {
-    headline: "Let's build your custom voice agent.",
-    subheadline: 'Based in Ontario, Canada. Tell us about your call volume and goals. We will build a working demo customized to your business in 7-14 days.',
-    reassuranceCopy: 'Speak with our Canadian AI voice engineers. No high-pressure sales.',
+    eyebrow: 'GET STARTED',
+    headline: 'Book your free strategy call',
+    subheadline: "Tell us about your business and we'll show you exactly where AI can save you hours every week. No pressure, no jargon — just a clear plan.",
+    phone: '+1 (416) 555-0142',
+    displayPhone: '+1 (416) 555-0142',
+    email: 'hello@wiseaiautomation.ca',
+    location: 'Toronto, Ontario — serving all of Canada',
+    reassuranceCopy: 'Speak with our Canadian AI automation engineers. No pressure, no jargon.',
     benefits: [
-      'Free interactive demo built for your workflow',
-      'No commitment or upfront obligations',
-      'Customized to your exact brand tone and systems'
+      'Tailored assessment of where AI can save your team 10+ hours a week',
+      'Clear roadmap across Voice AI, automation, CRM, and custom apps',
+      'Zero obligation, zero pressure — just an actionable execution plan'
     ],
     whatsappPrompt: 'Prefer a fast chat? Message us directly on WhatsApp:'
   },
 
   footer: {
-    description: 'WISE AI designs, builds, and deploys custom Voice AI agents that handle phone calls for modern businesses 24/7. Proudly based in Ontario, Canada.',
+    description: 'Wise AI Automation designs, builds, and deploys intelligent AI systems that do the work for you — from voice telephony to end-to-end operational automation. Based in Toronto, Ontario.',
     links: {
       solutions: [
-        { label: 'Inbound Call Answering', href: '#solutions' },
-        { label: 'Appointment Booking', href: '#solutions' },
-        { label: 'Lead Qualification', href: '#solutions' },
-        { label: 'Customer Support', href: '#solutions' },
-        { label: 'Multilingual Voice', href: '#solutions' },
+        { label: 'Voice AI Agents', href: '#services' },
+        { label: 'AI Automation', href: '#services' },
+        { label: 'AI Chatbots', href: '#services' },
+        { label: 'Scheduling Apps', href: '#services' },
+        { label: 'Website Creation', href: '#services' },
+        { label: 'App Development', href: '#services' },
       ],
       company: [
+        { label: 'Services We Provide', href: '#services' },
         { label: 'Industries We Serve', href: '#industries' },
-        { label: 'How It Works', href: '#how-it-works' },
         { label: 'Live Demos', href: '#demo-showcase' },
         { label: 'Security & Compliance', href: '#security-compliance' },
         { label: 'Integrations', href: '#integrations' },
+        { label: 'Pricing', href: '#pricing' },
         { label: 'FAQ', href: '#faq' },
       ],
       legal: [

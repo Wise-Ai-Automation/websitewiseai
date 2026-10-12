@@ -25,23 +25,21 @@ export const Logo: React.FC<LogoProps> = ({
 
   return (
     <a href="#" className={`flex items-center gap-2.5 group select-none ${className}`}>
-      {/* Voice Waveform Logo Mark */}
-      <div className={`relative ${iconSizes[size]} rounded-xl bg-blue-600 p-[1.5px] shadow-sm group-hover:shadow transition-shadow duration-200`}>
-        <div className="w-full h-full bg-blue-950 rounded-[10px] flex items-center justify-center gap-[2.5px] p-1.5">
-          <span className="w-[2.5px] h-2.5 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '0ms' }} />
-          <span className="w-[2.5px] h-4 bg-sky-300 rounded-full animate-pulse" style={{ animationDelay: '200ms' }} />
-          <span className="w-[2.5px] h-5 bg-cyan-300 rounded-full animate-pulse" style={{ animationDelay: '400ms' }} />
-          <span className="w-[2.5px] h-3.5 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '600ms' }} />
-          <span className="w-[2.5px] h-2 bg-indigo-300 rounded-full animate-pulse" style={{ animationDelay: '800ms' }} />
-        </div>
+      {/* Teal Star Logo Mark Matching Mockup */}
+      <div className={`relative ${iconSizes[size]} rounded-full bg-[#00c5c8] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-200 shrink-0`}>
+        <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4 text-slate-950">
+          <path
+            d="M12 2L14.39 9.61L22 12L14.39 14.39L12 22L9.61 14.39L2 12L9.61 9.61L12 2Z"
+            fill="currentColor"
+          />
+        </svg>
       </div>
 
       {showText && (
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1.5">
           <span className={`font-bold text-slate-900 font-heading tracking-tight ${textSizes[size]}`}>
-            WISE<span className="text-blue-600">AI</span>
+            Wise AI <span className="font-semibold text-slate-700">Automation</span>
           </span>
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-blue-600 animate-ping opacity-75" />
         </div>
       )}
     </a>
