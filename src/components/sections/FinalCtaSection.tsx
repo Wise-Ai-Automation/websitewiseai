@@ -87,7 +87,7 @@ export const FinalCtaSection: React.FC = () => {
             particleCount: 90,
             spread: 75,
             origin: { y: 0.6 },
-            colors: ['#00c5c8', '#0284c7', '#10b981', '#3b82f6'],
+            colors: ['#00C5C8', '#2E66FA', '#1E4AE0', '#35D2D2'],
           })
         } catch {
           // Confetti fallback
@@ -104,10 +104,10 @@ export const FinalCtaSection: React.FC = () => {
   }
 
   return (
-    <section id="book-demo" className="py-24 bg-[#0a0e17] text-white border-b border-slate-800/80 relative overflow-hidden scroll-mt-16">
+    <section id="book-demo" className="py-24 bg-ink-950 text-white border-b border-slate-800/80 relative overflow-hidden scroll-mt-16">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-0 w-[500px] h-[400px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-0" />
-      <div className="absolute bottom-0 right-10 w-[450px] h-[350px] bg-blue-600/10 rounded-full blur-[130px] pointer-events-none -z-0" />
+      <div className="absolute top-1/2 left-0 w-[500px] h-[400px] bg-signal-500/10 rounded-full blur-[140px] pointer-events-none -z-0" />
+      <div className="absolute bottom-0 right-10 w-[450px] h-[350px] bg-brand-600/10 rounded-full blur-[130px] pointer-events-none -z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -115,7 +115,7 @@ export const FinalCtaSection: React.FC = () => {
           {/* Left Column: Heading, Subtitle & Direct Contact Info (Matching Image 2) */}
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">
+              <div className="inline-flex items-center gap-2 text-signal-400 text-xs font-mono font-bold tracking-widest uppercase">
                 <span>GET STARTED</span>
               </div>
 
@@ -132,9 +132,9 @@ export const FinalCtaSection: React.FC = () => {
             <div className="space-y-4 pt-2">
               <a
                 href="tel:+14165550142"
-                className="flex items-center gap-3.5 text-slate-300 hover:text-cyan-400 transition-colors group text-sm sm:text-base"
+                className="flex items-center gap-3.5 text-slate-300 hover:text-signal-400 transition-colors group text-sm sm:text-base"
               >
-                <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 group-hover:border-cyan-500/50 transition-colors shrink-0">
+                <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-signal-400 group-hover:border-signal-500/50 transition-colors shrink-0">
                   <Phone className="w-4 h-4" />
                 </div>
                 <span className="font-medium">+1 (416) 555-0142</span>
@@ -142,16 +142,16 @@ export const FinalCtaSection: React.FC = () => {
 
               <a
                 href="mailto:hello@wiseaiautomation.ca"
-                className="flex items-center gap-3.5 text-slate-300 hover:text-cyan-400 transition-colors group text-sm sm:text-base"
+                className="flex items-center gap-3.5 text-slate-300 hover:text-signal-400 transition-colors group text-sm sm:text-base"
               >
-                <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 group-hover:border-cyan-500/50 transition-colors shrink-0">
+                <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-signal-400 group-hover:border-signal-500/50 transition-colors shrink-0">
                   <Mail className="w-4 h-4" />
                 </div>
                 <span className="font-medium">hello@wiseaiautomation.ca</span>
               </a>
 
               <div className="flex items-center gap-3.5 text-slate-300 text-sm sm:text-base">
-                <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+                <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-signal-400 shrink-0">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <span className="font-medium">Toronto, Ontario — serving all of Canada</span>
@@ -160,7 +160,7 @@ export const FinalCtaSection: React.FC = () => {
 
             {/* Fast WhatsApp Chat Alternative */}
             <div className="pt-4 border-t border-slate-800/80">
-              <div className="p-5 rounded-2xl bg-[#121824]/80 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="p-5 rounded-2xl bg-ink-900/80 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-[#25D366] flex items-center justify-center shrink-0">
                     <WhatsAppIcon className="w-5 h-5" />
@@ -185,19 +185,19 @@ export const FinalCtaSection: React.FC = () => {
 
             {/* Trust note */}
             <div className="flex items-center gap-2 text-xs text-slate-500">
-              <ShieldCheck className="w-4 h-4 text-cyan-400" />
+              <ShieldCheck className="w-4 h-4 text-signal-400" />
               <span>Strict privacy adherence • Canadian PIPEDA Compliant • Zero obligation</span>
             </div>
           </div>
 
           {/* Right Column: Lead Form (Exact Match from Image 2) */}
           <div className="lg:col-span-6">
-            <div className="bg-[#121824] border border-slate-800 rounded-3xl p-7 sm:p-9 shadow-2xl relative">
+            <div className="bg-ink-900 border border-slate-800 rounded-3xl p-7 sm:p-9 shadow-2xl relative">
               
               {isSuccess ? (
                 /* Success View */
                 <div className="py-12 px-4 text-center space-y-5 animate-in fade-in zoom-in-95 duration-200">
-                  <div className="w-16 h-16 rounded-full bg-cyan-500/10 border-2 border-cyan-400 flex items-center justify-center mx-auto text-cyan-400 shadow-sm">
+                  <div className="w-16 h-16 rounded-full bg-signal-500/10 border-2 border-signal-400 flex items-center justify-center mx-auto text-signal-400 shadow-sm">
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
 
@@ -222,7 +222,7 @@ export const FinalCtaSection: React.FC = () => {
                       href="https://wa.me/12262010271?text=Hi%20Wise%20AI%20Automation%2C%20I%20just%20submitted%20a%20call%20request%20on%20your%20website"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-6 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors"
+                      className="px-6 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-signal-400 hover:bg-signal-300 transition-colors"
                     >
                       Ping Us on WhatsApp
                     </a>
@@ -260,9 +260,9 @@ export const FinalCtaSection: React.FC = () => {
                       id="name"
                       type="text"
                       placeholder="Jane Tremblay"
-                      className={`w-full px-4 py-3.5 rounded-xl bg-[#0a0e17] border ${
-                        errors.name ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-cyan-400'
-                      } text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-400 transition-colors`}
+                      className={`w-full px-4 py-3.5 rounded-xl bg-ink-950 border ${
+                        errors.name ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-signal-400'
+                      } text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-signal-400 transition-colors`}
                       {...register('name')}
                     />
                     {errors.name && (
@@ -279,9 +279,9 @@ export const FinalCtaSection: React.FC = () => {
                       id="workEmail"
                       type="email"
                       placeholder="jane@yourbusiness.ca"
-                      className={`w-full px-4 py-3.5 rounded-xl bg-[#0a0e17] border ${
-                        errors.workEmail ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-cyan-400'
-                      } text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-400 transition-colors`}
+                      className={`w-full px-4 py-3.5 rounded-xl bg-ink-950 border ${
+                        errors.workEmail ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-signal-400'
+                      } text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-signal-400 transition-colors`}
                       {...register('workEmail')}
                     />
                     {errors.workEmail && (
@@ -296,9 +296,9 @@ export const FinalCtaSection: React.FC = () => {
                     </label>
                     <select
                       id="interestedIn"
-                      className={`w-full px-4 py-3.5 rounded-xl bg-[#0a0e17] border ${
-                        errors.interestedIn ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-cyan-400'
-                      } text-sm text-white focus:outline-none focus:ring-1 focus:ring-cyan-400 transition-colors cursor-pointer`}
+                      className={`w-full px-4 py-3.5 rounded-xl bg-ink-950 border ${
+                        errors.interestedIn ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-signal-400'
+                      } text-sm text-white focus:outline-none focus:ring-1 focus:ring-signal-400 transition-colors cursor-pointer`}
                       {...register('interestedIn')}
                     >
                       <option value="Voice AI agent">Voice AI agent</option>
@@ -323,9 +323,9 @@ export const FinalCtaSection: React.FC = () => {
                       id="message"
                       rows={4}
                       placeholder="We run a dental clinic in Mississauga and miss a lot of after-hours calls..."
-                      className={`w-full px-4 py-3.5 rounded-xl bg-[#0a0e17] border ${
-                        errors.message ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-cyan-400'
-                      } text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-400 transition-colors resize-none`}
+                      className={`w-full px-4 py-3.5 rounded-xl bg-ink-950 border ${
+                        errors.message ? 'border-rose-500 focus:border-rose-400' : 'border-slate-800 focus:border-signal-400'
+                      } text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-signal-400 transition-colors resize-none`}
                       {...register('message')}
                     />
                     {errors.message && (
@@ -338,7 +338,7 @@ export const FinalCtaSection: React.FC = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 px-8 rounded-full text-sm sm:text-base font-extrabold text-slate-950 bg-[#00c5c8] hover:bg-[#00d8db] transition-all duration-200 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/35 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 group cursor-pointer active:scale-[0.98]"
+                      className="w-full py-4 px-8 rounded-full text-sm sm:text-base font-extrabold text-slate-950 bg-signal-500 hover:bg-signal-400 transition-all duration-200 shadow-lg shadow-signal-500/25 hover:shadow-signal-500/35 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 group cursor-pointer active:scale-[0.98]"
                     >
                       {isSubmitting ? (
                         <>

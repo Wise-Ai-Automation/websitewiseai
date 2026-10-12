@@ -105,18 +105,18 @@ export const ProblemOutcomeSection: React.FC = () => {
           </div>
 
           {/* Card 2: With WISE AI Voice Agents */}
-          <div className="rounded-3xl bg-white border-2 border-blue-500 p-7 sm:p-9 shadow-xl shadow-blue-500/10 flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-blue-600" />
+          <div className="rounded-3xl bg-white border-2 border-brand-500 p-7 sm:p-9 shadow-xl shadow-brand-500/10 flex flex-col justify-between relative overflow-hidden">
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-brand-600" />
 
             <div>
               <div className="flex items-center justify-between pb-6 mb-6 border-b border-slate-100">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center font-bold shadow-2xs">
+                  <div className="w-10 h-10 rounded-xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center font-bold shadow-2xs">
                     <PhoneCall className="w-5 h-5" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">With WISE AI Voice Agents</h3>
-                    <p className="text-xs text-blue-600 font-semibold">Autonomous Inbound Coverage 24/7</p>
+                    <p className="text-xs text-brand-600 font-semibold">Autonomous Inbound Coverage 24/7</p>
                   </div>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-emerald-50 text-[11px] font-mono font-bold text-emerald-700 border border-emerald-200">
@@ -126,8 +126,8 @@ export const ProblemOutcomeSection: React.FC = () => {
 
               {/* Step-by-Step Breakdown */}
               <div className="space-y-4">
-                <div className="flex items-start gap-3.5 p-3 rounded-xl bg-blue-50/50 border border-blue-100">
-                  <span className="w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                <div className="flex items-start gap-3.5 p-3 rounded-xl bg-brand-50/50 border border-brand-100">
+                  <span className="w-6 h-6 rounded-full bg-brand-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                     1
                   </span>
                   <div>
@@ -138,8 +138,8 @@ export const ProblemOutcomeSection: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3.5 p-3 rounded-xl bg-blue-50/50 border border-blue-100">
-                  <span className="w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                <div className="flex items-start gap-3.5 p-3 rounded-xl bg-brand-50/50 border border-brand-100">
+                  <span className="w-6 h-6 rounded-full bg-brand-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                     2
                   </span>
                   <div>
@@ -165,12 +165,12 @@ export const ProblemOutcomeSection: React.FC = () => {
             </div>
 
             {/* Bottom Gain Summary */}
-            <div className="mt-8 pt-5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-900 bg-blue-50/80 p-4 rounded-xl border border-blue-200">
+            <div className="mt-8 pt-5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-900 bg-brand-50/80 p-4 rounded-xl border border-brand-200">
               <span className="flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-blue-600" />
+                <Sparkles className="w-4 h-4 text-brand-600" />
                 <span>Operational Efficiency Gain:</span>
               </span>
-              <span className="font-mono font-extrabold text-sm text-blue-700">15+ Staff Hours Saved Weekly</span>
+              <span className="font-mono font-extrabold text-sm text-brand-700">15+ Staff Hours Saved Weekly</span>
             </div>
           </div>
 
@@ -190,7 +190,7 @@ export const ProblemOutcomeSection: React.FC = () => {
           </div>
 
           <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs">
-            <div className="w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 text-amber-600 flex items-center justify-center mb-4">
+            <div className="w-9 h-9 rounded-xl bg-slate-100 border border-slate-200 text-slate-500 flex items-center justify-center mb-4">
               <Clock className="w-5 h-5" />
             </div>
             <p className="text-2xl font-extrabold text-slate-900 stat-number">67% Abandon Rate</p>
@@ -201,10 +201,10 @@ export const ProblemOutcomeSection: React.FC = () => {
           </div>
 
           <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs">
-            <div className="w-9 h-9 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center mb-4">
+            <div className="w-9 h-9 rounded-xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-4">
               <ShieldCheck className="w-5 h-5" />
             </div>
-            <p className="text-2xl font-extrabold text-blue-600 stat-number">15+ Hours Saved</p>
+            <p className="text-2xl font-extrabold text-brand-600 stat-number">15+ Hours Saved</p>
             <p className="text-xs font-bold text-slate-900 mt-1">Front Desk Time Recovered</p>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
               Your staff ceases being overwhelmed by repetitive inquiries about hours, directions, and basic pricing.
@@ -215,19 +215,19 @@ export const ProblemOutcomeSection: React.FC = () => {
         {/* 4 Guaranteed Operational KPI Benchmarks Bar */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
           <div className="text-center p-2">
-            <p className="stat-number text-2xl font-extrabold text-blue-600">100%</p>
+            <p className="stat-number text-2xl font-extrabold text-brand-600">100%</p>
             <p className="text-xs font-bold text-slate-900 mt-0.5">First-Ring Pick-Up</p>
             <p className="text-[11px] text-slate-500">Zero busy signals or hold queues</p>
           </div>
 
           <div className="text-center p-2 border-l border-slate-200">
-            <p className="stat-number text-2xl font-extrabold text-blue-600">&lt; 800ms</p>
+            <p className="stat-number text-2xl font-extrabold text-brand-600">&lt; 800ms</p>
             <p className="text-xs font-bold text-slate-900 mt-0.5">Conversational Latency</p>
             <p className="text-[11px] text-slate-500">Sub-second natural cadence</p>
           </div>
 
           <div className="text-center p-2 border-l border-slate-200">
-            <p className="stat-number text-2xl font-extrabold text-blue-600">24/7/365</p>
+            <p className="stat-number text-2xl font-extrabold text-brand-600">24/7/365</p>
             <p className="text-xs font-bold text-slate-900 mt-0.5">After-Hours Active</p>
             <p className="text-[11px] text-slate-500">Nights, weekends & statutory holidays</p>
           </div>

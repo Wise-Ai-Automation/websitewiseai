@@ -409,112 +409,132 @@ export const siteContent = {
   demoScenarios: [
     {
       id: 'clinic',
-      title: 'Clinic Appointment Booking',
-      category: 'Healthcare & Wellness',
-      callerName: 'Patient: Sarah L.',
-      duration: '0m 28s',
+      title: 'Dental & Healthcare Practice',
+      category: 'Healthcare & Dental Practices',
+      callerName: 'Patient: Dental Intake',
+      duration: '1m 12s',
       outcome: 'Consultation Scheduled & EMR Logged',
-      summary: 'Patient calls after hours with knee pain, requests a specialist consult, and confirms appointment details.',
-      audioUrl: '/audio/clinic-booking.mp3',
+      summary: 'Patient calls dental clinic to schedule dental checkup. Voice AI checks calendar openings, answers questions, and locks in appointment.',
+      audioUrl: 'https://storage.googleapis.com/synthflow-website-assets/Dental%20%28Healthcare%29.mp3',
       dialogue: [
         {
           speaker: 'agent',
-          timestamp: '00:01',
-          text: "Thank you for calling Lakeview Health Clinic in Ontario. I'm Sophia, the clinic's digital assistant. Are you calling to book a new appointment or follow up on existing care?"
+          timestamp: '00:02',
+          text: "Thank you for calling Lakeview Health Clinic. How can I help you today?"
         },
         {
           speaker: 'customer',
-          timestamp: '00:07',
-          text: "Hi Sophia, I need to book an in-person appointment for persistent knee pain. Do you have anything this Friday morning?"
+          timestamp: '00:08',
+          text: "Hi, I'd like to book an appointment for a dental checkup and teeth cleaning this week if possible."
         },
         {
           speaker: 'agent',
-          timestamp: '00:14',
-          text: "I can check that for you right away. Dr. Watson has an opening this Friday at 9:30 AM or 11:15 AM. Would either of those fit your morning?"
+          timestamp: '00:15',
+          text: "I can help with that right away. Do you have a preferred day or time that works best for you?"
         },
         {
           speaker: 'customer',
           timestamp: '00:22',
-          text: "9:30 AM works great for me."
+          text: "Thursday afternoon would be great."
         },
         {
           speaker: 'agent',
-          timestamp: '00:26',
-          text: "Perfect. You are scheduled with Dr. Watson for Friday at 9:30 AM. I've sent a secure intake link via SMS to this phone. We look forward to seeing you!"
+          timestamp: '00:28',
+          text: "Dr. Watson has an opening this Thursday at 2:30 PM. Shall I reserve that slot for you?"
+        },
+        {
+          speaker: 'customer',
+          timestamp: '00:34',
+          text: "Yes, 2:30 PM is perfect."
+        },
+        {
+          speaker: 'agent',
+          timestamp: '00:39',
+          text: "You're all confirmed for Thursday at 2:30 PM. I've sent a digital intake link and SMS confirmation to your number. See you then!"
         }
       ]
     },
     {
       id: 'realestate',
-      title: 'Real Estate Property Inquiry',
+      title: 'Real Estate Outbound Reactivation',
       category: 'Real Estate & Property',
-      callerName: 'Buyer: David K.',
-      duration: '0m 32s',
-      outcome: 'Lead Qualified & Private Showing Booked',
-      summary: 'Buyer calls from yard sign, asks about price, bedrooms, and schedules an in-person viewing.',
-      audioUrl: '/audio/realestate-inquiry.mp3',
+      callerName: 'Lead: Past Buyer',
+      duration: '0m 45s',
+      outcome: 'Lead Reactivated & Showing Scheduled',
+      summary: 'Voice AI conducts proactive outbound follow-up to previous buyer inquiries, confirms buying criteria, and arranges a private home tour.',
+      audioUrl: 'https://storage.googleapis.com/synthflow-website-assets/Real%20Estate%20Outbound%20Reactivation%20Campaign%20%28Real%20Estate%29.mp3',
       dialogue: [
         {
           speaker: 'agent',
-          timestamp: '00:01',
-          text: "Hello! Thanks for calling Summit Realty Group. I'm Alex. Are you calling about our listing on Highland Avenue or another property?"
+          timestamp: '00:02',
+          text: "Hi there! This is Alex from Summit Realty. I'm following up on your previous inquiry regarding homes in Ontario. Are you still looking to buy this season?"
         },
         {
           speaker: 'customer',
-          timestamp: '00:08',
-          text: "Yes, 412 Highland Avenue! What's the asking price and how many bedrooms does it have?"
+          timestamp: '00:09',
+          text: "Yes, we've actually been looking for 4-bedroom detached homes with a yard under $900k."
         },
         {
           speaker: 'agent',
-          timestamp: '00:15',
-          text: "412 Highland Avenue is listed at $849,000. It features 4 bedrooms, 3 bathrooms, and an open-concept kitchen. Would you like to schedule a private tour with our listing agent this weekend?"
+          timestamp: '00:16',
+          text: "That's fantastic. We just listed a beautiful 4-bedroom property on Highland Avenue that matches your criteria exactly. Would you like to tour it this Saturday?"
         },
         {
           speaker: 'customer',
-          timestamp: '00:25',
-          text: "Yes, Saturday afternoon around 2 PM would be ideal."
+          timestamp: '00:26',
+          text: "Saturday afternoon around 2 PM would be ideal."
         },
         {
           speaker: 'agent',
-          timestamp: '00:30',
-          text: "Saturday at 2:00 PM is reserved for you. I've logged your contact info in our CRM, and our agent Jordan will meet you at the front entrance. I've sent the confirmation to your phone."
+          timestamp: '00:31',
+          text: "Saturday at 2:00 PM is reserved for you. Our listing specialist Jordan will meet you there. I've sent the address and confirmation to your phone."
         }
       ]
     },
     {
-      id: 'support',
-      title: 'Home Services Dispatch & Support',
-      category: 'Home Services & Trades',
-      callerName: 'Homeowner: Elena M.',
-      duration: '0m 34s',
-      outcome: 'Emergency Dispatch Routed to Field Tech',
-      summary: 'Homeowner calls regarding AC failure during a heatwave. Voice AI assesses urgency and routes to emergency dispatch.',
-      audioUrl: '/audio/support-dispatch.mp3',
+      id: 'software',
+      title: 'Software Demo Booking (Larissa)',
+      category: 'B2B SaaS & Tech',
+      callerName: 'Prospect: Operations Director',
+      duration: '0m 58s',
+      outcome: 'Discovery Call Qualified & Calendar Locked',
+      summary: 'Larissa engages B2B software inquiries, evaluates current tool stack, identifies operational needs, and schedules an account executive demonstration.',
+      audioUrl: 'https://storage.googleapis.com/synthflow-website-assets/Software%20Demo%20Booking%20Larissa%20%28Software%29.mp3',
       dialogue: [
         {
           speaker: 'agent',
-          timestamp: '00:01',
-          text: "Rapid Air & Heating, this is Maya. How can we keep your home comfortable today?"
+          timestamp: '00:02',
+          text: "Hi! This is Larissa from the product team. Thanks for requesting a walkthrough of our automation platform. What's the main bottleneck you're looking to solve?"
         },
         {
           speaker: 'customer',
-          timestamp: '00:06',
-          text: "Our AC unit just stopped blowing cold air and it's 30 degrees Celsius inside with two small children. Is someone available today?"
+          timestamp: '00:10',
+          text: "We spend way too many hours manually transferring lead data between our CRM and invoicing tools."
         },
         {
           speaker: 'agent',
-          timestamp: '00:13',
-          text: "I understand how urgent that is, Elena. Let me check our emergency dispatch schedule. We have a technician in your neighborhood who can arrive between 1:00 PM and 2:30 PM today. Does that window work?"
+          timestamp: '00:18',
+          text: "That's exactly what our workflow connectors automate in real time. How many team members would be using the system?"
         },
         {
           speaker: 'customer',
-          timestamp: '00:23',
-          text: "Yes, please send them as soon as possible!"
+          timestamp: '00:26',
+          text: "About 15 to 20 people across our sales and operations teams."
         },
         {
           speaker: 'agent',
-          timestamp: '00:27',
-          text: "Dispatch confirmed. Technician Carlos is assigned and on route. You'll receive real-time GPS tracking via SMS in about 15 minutes."
+          timestamp: '00:32',
+          text: "Perfect fit for our business tier. Let's get you set up with a tailored product demo with our solutions engineer. Do you have 20 minutes this Wednesday at 11:00 AM EST?"
+        },
+        {
+          speaker: 'customer',
+          timestamp: '00:43',
+          text: "Wednesday at 11 AM works well."
+        },
+        {
+          speaker: 'agent',
+          timestamp: '00:47',
+          text: "Awesome! The calendar invite and Zoom link are in your inbox. Looking forward to showing you the platform."
         }
       ]
     }

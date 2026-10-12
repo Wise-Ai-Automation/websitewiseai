@@ -16,7 +16,7 @@ import { FloatingWhatsApp } from './components/common/FloatingWhatsApp'
 
 export const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-brand-600 selection:text-white">
       {/* Sticky Clean Header */}
       <Header />
 

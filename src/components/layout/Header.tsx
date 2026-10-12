@@ -83,7 +83,7 @@ export const Header: React.FC = () => {
             <a
               href="#book-demo"
               onClick={(e) => scrollToSection(e, '#book-demo')}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-[#00c5c8] hover:bg-[#00d8db] transition-all duration-150 shadow-md shadow-cyan-500/20 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-signal-500 hover:bg-signal-400 transition-all duration-150 shadow-md shadow-signal-500/20 active:scale-[0.98]"
             >
               <span>Book a free call</span>
             </a>
@@ -94,7 +94,7 @@ export const Header: React.FC = () => {
             <a
               href="#book-demo"
               onClick={(e) => scrollToSection(e, '#book-demo')}
-              className="px-4 py-2 text-xs font-bold rounded-full bg-[#00c5c8] text-slate-950 hover:bg-[#00d8db] shadow-sm"
+              className="px-4 py-2 text-xs font-bold rounded-full bg-signal-500 text-slate-950 hover:bg-signal-400 shadow-sm"
             >
               Book a call
             </a>
@@ -131,7 +131,7 @@ export const Header: React.FC = () => {
                     key={item.href}
                     href={item.href}
                     onClick={(e) => scrollToSection(e, item.href)}
-                    className="flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors"
                   >
                     <span>{item.label}</span>
                     <ArrowRight className="w-4 h-4 text-slate-400" />
@@ -144,7 +144,7 @@ export const Header: React.FC = () => {
               <a
                 href="#book-demo"
                 onClick={(e) => scrollToSection(e, '#book-demo')}
-                className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/25"
+                className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-500/25"
               >
                 <span>Book a Free Demo</span>
                 <ArrowRight className="w-4 h-4" />

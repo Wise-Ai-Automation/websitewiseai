@@ -12,8 +12,8 @@ export const IntegrationsSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-semibold">
-            <Cpu className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs font-semibold">
+            <Cpu className="w-3.5 h-3.5 text-brand-600" />
             <span>Ecosystem Connectivity</span>
           </div>
 
@@ -35,7 +35,7 @@ export const IntegrationsSection: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
                     {cat.category}
                   </h3>
                   <span className="text-[11px] font-mono text-slate-500 font-medium px-2 py-0.5 rounded-md bg-white border border-slate-200">
@@ -47,13 +47,13 @@ export const IntegrationsSection: React.FC = () => {
                   {cat.tools.map((tool, tIdx) => (
                     <div
                       key={tIdx}
-                      className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-slate-200 text-xs text-slate-800 hover:border-blue-400 hover:shadow-xs transition-all duration-150"
+                      className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-slate-200 text-xs text-slate-800 hover:border-brand-400 hover:shadow-xs transition-all duration-150"
                     >
                       {/* Real Brand Logo */}
                       <ToolLogo name={tool.name} className="w-4 h-4 shrink-0" />
                       <span className="font-semibold text-slate-800">{tool.name}</span>
                       {tool.tag && (
-                        <span className="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200 font-bold">
+                        <span className="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-brand-50 text-brand-700 border border-brand-200 font-bold">
                           {tool.tag}
                         </span>
                       )}
@@ -64,7 +64,7 @@ export const IntegrationsSection: React.FC = () => {
 
               <div className="mt-6 pt-3 border-t border-slate-200/80 flex items-center justify-between text-[11px] text-slate-500 font-medium">
                 <span>Bidirectional sync • Canadian SIP supported</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-600 transition-colors" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-brand-600 transition-colors" />
               </div>
             </div>
           ))}

@@ -12,7 +12,7 @@ export const TestimonialsSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-semibold">
-            <MessageSquareQuote className="w-3.5 h-3.5 text-blue-600" />
+            <MessageSquareQuote className="w-3.5 h-3.5 text-brand-600" />
             <span>Client Perspectives</span>
           </div>
 
@@ -39,7 +39,7 @@ export const TestimonialsSection: React.FC = () => {
               className="bg-slate-50 rounded-2xl border border-slate-200 p-7 flex flex-col justify-between hover:border-slate-300 transition-all duration-200 group"
             >
               <div>
-                <MessageSquareQuote className="w-8 h-8 text-blue-600/30 mb-4" />
+                <MessageSquareQuote className="w-8 h-8 text-brand-600/30 mb-4" />
                 <p className="text-sm text-slate-700 leading-relaxed italic mb-6">
                   "{t.quote}"
                 </p>
@@ -49,7 +49,7 @@ export const TestimonialsSection: React.FC = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="text-xs font-bold text-slate-900">{t.authorRole}</h4>
-                    <p className="text-[11px] text-blue-700 font-semibold mt-0.5">{t.industry}</p>
+                    <p className="text-[11px] text-brand-700 font-semibold mt-0.5">{t.industry}</p>
                   </div>
                   {t.isPlaceholder && (
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white text-slate-500 border border-slate-200">

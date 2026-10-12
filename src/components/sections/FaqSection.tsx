@@ -16,8 +16,8 @@ export const FaqSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-semibold">
-            <HelpCircle className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs font-semibold">
+            <HelpCircle className="w-3.5 h-3.5 text-brand-600" />
             <span>Got Questions?</span>
           </div>
 
@@ -40,7 +40,7 @@ export const FaqSection: React.FC = () => {
                 key={faq.id}
                 className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                   isOpen
-                    ? 'bg-slate-50 border-blue-400 shadow-sm'
+                    ? 'bg-slate-50 border-brand-400 shadow-sm'
                     : 'bg-white border-slate-200 hover:border-slate-300'
                 }`}
               >
@@ -49,7 +49,7 @@ export const FaqSection: React.FC = () => {
                   onClick={() => toggleFaq(faq.id)}
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${faq.id}`}
-                  className="w-full py-5 px-6 text-left flex items-center justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded-2xl"
+                  className="w-full py-5 px-6 text-left flex items-center justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-brand-600 rounded-2xl"
                 >
                   <span className="text-base sm:text-lg font-bold text-slate-900 pr-4">
                     {faq.question}
@@ -57,7 +57,7 @@ export const FaqSection: React.FC = () => {
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
                       isOpen
-                        ? 'bg-blue-600 text-white rotate-180'
+                        ? 'bg-brand-600 text-white rotate-180'
                         : 'bg-slate-100 text-slate-500'
                     }`}
                   >
@@ -82,7 +82,7 @@ export const FaqSection: React.FC = () => {
         {/* Have more questions banner */}
         <div className="mt-12 text-center p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 text-left">
-            <MessageSquare className="w-5 h-5 text-blue-600 shrink-0" />
+            <MessageSquare className="w-5 h-5 text-brand-600 shrink-0" />
             <div>
               <p className="text-sm font-bold text-slate-900">Have a specific Canadian compliance or SIP question?</p>
               <p className="text-xs text-slate-600">Ask us anything about PIPEDA, PHIPA for clinics, or bilingual French models.</p>

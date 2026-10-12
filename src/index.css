@@ -10,11 +10,11 @@
     --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    --primary: 221 83% 53%;
+    --primary: 228 78% 48%;
     --primary-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221 83% 53%;
+    --ring: 228 78% 48%;
   }
 
   html {
@@ -230,22 +230,35 @@
   line-height: 1;
 }
 
-/* Gradient text */
+/* Gradient text — brand blue to signal teal, used once in the hero, nowhere else */
 .gradient-text {
-  background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 50%, #06b6d4 100%);
+  background: linear-gradient(100deg, #1E4AE0 0%, #2E66FA 55%, #00A3A5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Subtle blue tinted section background */
+/* Subtle tinted section background — used sparingly to break up long white stretches */
 .bg-section-alt {
-  background: linear-gradient(180deg, #f8faff 0%, #f0f4ff 100%);
+  background: linear-gradient(180deg, #F9FAFC 0%, #F3F5FA 100%);
+}
+
+/* Fine grain texture overlay for dark sections — adds depth without another gradient blob */
+.bg-grain {
+  position: relative;
+}
+.bg-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
 }
 
 /* Focus visible outline */
 *:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #2E66FA;
   outline-offset: 3px;
   border-radius: 4px;
 }

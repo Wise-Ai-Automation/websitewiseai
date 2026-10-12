@@ -12,6 +12,40 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        // Primary brand scale — deep cobalt blue. Trust, CTAs, links, section accents.
+        brand: {
+          50: '#EFF4FF',
+          100: '#DCE7FF',
+          200: '#BAD1FF',
+          300: '#8AB2FF',
+          400: '#5389FF',
+          500: '#2E66FA',
+          600: '#1E4AE0',
+          700: '#1638B3',
+          800: '#142E8C',
+          900: '#142A6E',
+          950: '#0C1740',
+        },
+        // Signal accent — the brand teal, reserved for "live / voice / real-time" moments only.
+        signal: {
+          50: '#E8FBFB',
+          100: '#D1F7F7',
+          200: '#A3EFEF',
+          300: '#6FE3E3',
+          400: '#35D2D2',
+          500: '#00C5C8',
+          600: '#00A3A5',
+          700: '#037F81',
+          800: '#0B6668',
+          900: '#11494A',
+          950: '#082B2C',
+        },
+        // Ink — the single dark-section palette (replaces the old mix of near-black hexes).
+        ink: {
+          800: '#1B2436',
+          900: '#121826',
+          950: '#090D16',
+        },
       },
       fontFamily: {
         sans: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],

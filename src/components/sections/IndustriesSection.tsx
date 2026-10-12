@@ -13,8 +13,8 @@ export const IndustriesSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-semibold">
-            <Building2 className="w-4 h-4 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs font-semibold">
+            <Building2 className="w-4 h-4 text-brand-600" />
             <span>Real-World Industry Deployments</span>
           </div>
 
@@ -38,7 +38,7 @@ export const IndustriesSection: React.FC = () => {
                 onClick={() => setSelectedIndustry(item.id)}
                 className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 border ${
                   isSelected
-                    ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/20'
+                    ? 'bg-brand-600 text-white border-brand-600 shadow-md shadow-brand-500/20'
                     : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900'
                 }`}
               >
@@ -63,7 +63,7 @@ export const IndustriesSection: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
               
               <div className="absolute bottom-4 left-4 right-4 text-white">
-                <span className="text-[11px] font-mono uppercase tracking-wider bg-blue-600/90 backdrop-blur-sm px-2.5 py-1 rounded-md font-semibold inline-block mb-1.5">
+                <span className="text-[11px] font-mono uppercase tracking-wider bg-brand-600/90 backdrop-blur-sm px-2.5 py-1 rounded-md font-semibold inline-block mb-1.5">
                   Live Deployment Model
                 </span>
                 <p className="text-base font-bold text-white drop-shadow-sm">{activeItem.name}</p>
@@ -73,7 +73,7 @@ export const IndustriesSection: React.FC = () => {
             {/* Deep-dive Use Case Details */}
             <div className="lg:col-span-6 space-y-6">
               <div>
-                <span className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider">
+                <span className="text-xs font-mono font-semibold text-brand-700 uppercase tracking-wider">
                   Target Use Case
                 </span>
                 <h3 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
@@ -107,14 +107,14 @@ export const IndustriesSection: React.FC = () => {
 
               {/* Impact Metric Pill & CTA */}
               <div className="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div className="flex items-center gap-2 text-xs font-semibold text-blue-800 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200">
-                  <TrendingUp className="w-4 h-4 text-blue-600" />
+                <div className="flex items-center gap-2 text-xs font-semibold text-brand-800 bg-brand-50 px-3 py-1.5 rounded-lg border border-brand-200">
+                  <TrendingUp className="w-4 h-4 text-brand-600" />
                   <span>{activeItem.impactMetric}</span>
                 </div>
 
                 <a
                   href="#book-demo"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm"
                 >
                   <span>Build For My Practice</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -133,7 +133,7 @@ export const IndustriesSection: React.FC = () => {
               onClick={() => setSelectedIndustry(item.id)}
               className={`rounded-2xl border bg-white p-5 cursor-pointer transition-all duration-200 flex flex-col justify-between ${
                 item.id === selectedIndustry
-                  ? 'border-blue-600 ring-2 ring-blue-500/20 shadow-md'
+                  ? 'border-brand-600 ring-2 ring-brand-500/20 shadow-md'
                   : 'border-slate-200 hover:border-slate-300 hover:shadow-sm'
               }`}
             >
@@ -159,7 +159,7 @@ export const IndustriesSection: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-600">
+              <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-600">
                 <span>View workflow</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>

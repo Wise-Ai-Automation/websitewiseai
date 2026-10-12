@@ -24,17 +24,17 @@ export const Footer: React.FC = () => {
   }
 
   return (
-    <footer className="bg-[#0B1528] text-slate-300 pt-16 pb-12 border-t border-blue-950/80 relative">
+    <footer className="bg-ink-950 text-slate-300 pt-16 pb-24 sm:pb-12 border-t border-brand-950/80 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Grid: Brand & Link Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-blue-950/80">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-brand-950/80">
           
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <Logo size="md" />
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-950 text-blue-200 text-xs font-semibold border border-blue-800/50">
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-brand-950 text-brand-200 text-xs font-semibold border border-brand-800/50">
                 <span>🇨🇦</span>
                 <span>Ontario, Canada</span>
               </span>
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
                   href={`tel:${brand.contact.phone.replace(/[^0-9+]/g, '')}`}
                   className="inline-flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-white transition-colors"
                 >
-                  <Phone className="w-4 h-4 text-blue-400" />
+                  <Phone className="w-4 h-4 text-brand-400" />
                   <span>Direct: {brand.contact.displayPhone} (Ontario Line)</span>
                 </a>
               </div>
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
                   href={`mailto:${brand.contact.email}`}
                   className="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-white transition-colors"
                 >
-                  <Mail className="w-4 h-4 text-blue-400" />
+                  <Mail className="w-4 h-4 text-brand-400" />
                   <span>{brand.contact.email}</span>
                 </a>
               </div>
@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
             {/* Compliance badges pill */}
             <div className="flex items-center gap-3 pt-2 text-[11px] text-slate-400">
               <span className="flex items-center gap-1">
-                <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
+                <ShieldCheck className="w-3.5 h-3.5 text-brand-400" />
                 <span>PIPEDA Compliant</span>
               </span>
               <span>•</span>
@@ -141,7 +141,7 @@ export const Footer: React.FC = () => {
             <a
               href="#book-demo"
               onClick={(e) => scrollToSection(e, '#book-demo')}
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 transition-colors shadow-md"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-brand-600 hover:bg-brand-500 transition-colors shadow-md"
             >
               <span>Schedule Live Demo</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -154,7 +154,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {brand.meta.copyrightYear} {brand.name} Inc. (Ontario, Canada). All rights reserved.</p>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <button
               type="button"
               onClick={(e) => handleLegalClick(e, 'privacy')}
