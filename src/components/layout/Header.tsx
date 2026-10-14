@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Logo } from '../common/Logo'
 import { siteContent } from '../../content/siteContent'
 import { Menu, X, ArrowRight, Phone } from 'lucide-react'
@@ -32,15 +33,6 @@ export const Header: React.FC = () => {
     }
   }, [mobileMenuOpen])
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault()
-    setMobileMenuOpen(false)
-    const target = document.querySelector(href)
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
@@ -58,14 +50,13 @@ export const Header: React.FC = () => {
           {/* Simple, Clean Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {siteContent.nav.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
-                onClick={(e) => scrollToSection(e, item.href)}
+                to={`/${item.href}`}
                 className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -80,24 +71,23 @@ export const Header: React.FC = () => {
               <span>{siteContent.brand.contact.displayPhone}</span>
             </a>
 
-            <a
-              href="#book-demo"
-              onClick={(e) => scrollToSection(e, '#book-demo')}
+            <Link
+              to="/#book-demo"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-signal-500 hover:bg-signal-400 transition-all duration-150 shadow-md shadow-signal-500/20 active:scale-[0.98]"
             >
               <span>Book a free call</span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle Button */}
           <div className="flex items-center gap-3 lg:hidden">
-            <a
-              href="#book-demo"
-              onClick={(e) => scrollToSection(e, '#book-demo')}
+            <Link
+              to="/#book-demo"
+              onClick={() => setMobileMenuOpen(false)}
               className="px-4 py-2 text-xs font-bold rounded-full bg-signal-500 text-slate-950 hover:bg-signal-400 shadow-sm"
             >
               Book a call
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -127,28 +117,28 @@ export const Header: React.FC = () => {
 
               <div className="flex flex-col space-y-1">
                 {siteContent.nav.map((item) => (
-                  <a
+                  <Link
                     key={item.href}
-                    href={item.href}
-                    onClick={(e) => scrollToSection(e, item.href)}
+                    to={`/${item.href}`}
+                    onClick={() => setMobileMenuOpen(false)}
                     className="flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors"
                   >
                     <span>{item.label}</span>
                     <ArrowRight className="w-4 h-4 text-slate-400" />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
 
             <div className="pt-6 border-t border-slate-100 space-y-3">
-              <a
-                href="#book-demo"
-                onClick={(e) => scrollToSection(e, '#book-demo')}
+              <Link
+                to="/#book-demo"
+                onClick={() => setMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-500/25"
               >
                 <span>Book a Free Demo</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
 
               <a
                 href={siteContent.brand.contact.whatsappUrl}

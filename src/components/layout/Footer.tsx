@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Logo } from '../common/Logo'
 import { siteContent } from '../../content/siteContent'
 import { Phone, Mail, ArrowUpRight, X, ShieldCheck, Lock } from 'lucide-react'
@@ -7,16 +8,6 @@ import { WhatsAppIcon } from '../common/WhatsAppIcon'
 export const Footer: React.FC = () => {
   const { footer, brand } = siteContent
   const [activeModal, setActiveModal] = useState<'privacy' | 'terms' | null>(null)
-
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith('#') && href !== '#privacy-policy' && href !== '#terms-of-service') {
-      e.preventDefault()
-      const target = document.querySelector(href)
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
-  }
 
   const handleLegalClick = (e: React.MouseEvent, type: 'privacy' | 'terms') => {
     e.preventDefault()
@@ -98,13 +89,12 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5">
               {footer.links.solutions.map((item, idx) => (
                 <li key={idx}>
-                  <a
-                    href={item.href}
-                    onClick={(e) => scrollToSection(e, item.href)}
+                  <Link
+                    to={item.href}
                     className="text-xs text-slate-400 hover:text-white transition-colors"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -118,13 +108,12 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5">
               {footer.links.company.map((item, idx) => (
                 <li key={idx}>
-                  <a
-                    href={item.href}
-                    onClick={(e) => scrollToSection(e, item.href)}
+                  <Link
+                    to={`/${item.href}`}
                     className="text-xs text-slate-400 hover:text-white transition-colors"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -138,14 +127,13 @@ export const Footer: React.FC = () => {
             <p className="text-xs text-slate-400 leading-relaxed">
               Book a live demonstration customized with your practice or company's actual call scripts.
             </p>
-            <a
-              href="#book-demo"
-              onClick={(e) => scrollToSection(e, '#book-demo')}
+            <Link
+              to="/#book-demo"
               className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-brand-600 hover:bg-brand-500 transition-colors shadow-md"
             >
               <span>Schedule Live Demo</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
+            </Link>
           </div>
 
         </div>

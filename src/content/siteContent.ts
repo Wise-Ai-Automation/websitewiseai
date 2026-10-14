@@ -779,12 +779,12 @@ export const siteContent = {
     description: 'Wise AI Automation designs, builds, and deploys intelligent AI systems that do the work for you — from voice telephony to end-to-end operational automation. Based in Toronto, Ontario.',
     links: {
       solutions: [
-        { label: 'Voice AI Agents', href: '#services' },
-        { label: 'AI Automation', href: '#services' },
-        { label: 'AI Chatbots', href: '#services' },
-        { label: 'Scheduling Apps', href: '#services' },
-        { label: 'Website Creation', href: '#services' },
-        { label: 'App Development', href: '#services' },
+        { label: 'Voice AI Agents', href: '/services/voice-ai-agents' },
+        { label: 'AI Automation', href: '/services/ai-automation' },
+        { label: 'AI Chatbots', href: '/services/ai-chatbots' },
+        { label: 'Scheduling Apps', href: '/services/scheduling-apps' },
+        { label: 'Website Creation', href: '/services/website-creation' },
+        { label: 'App Development', href: '/services/app-development' },
       ],
       company: [
         { label: 'Services We Provide', href: '#services' },
