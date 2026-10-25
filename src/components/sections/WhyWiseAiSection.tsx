@@ -19,7 +19,7 @@ export const WhyWiseAiSection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs font-semibold">
             <Award className="w-3.5 h-3.5 text-brand-600" />
-            <span>Why Choose WISE AI</span>
+            <span>Why Choose OneWise AI</span>
           </div>
 
           <h2 className="font-heading text-[2rem] sm:text-[2.5rem] lg:text-[3rem] font-bold text-slate-900 leading-[1.12]">
@@ -105,7 +105,7 @@ export const WhyWiseAiSection: React.FC = () => {
 
                 <div>
                   <div className="flex justify-between text-[10px] font-mono font-bold text-brand-900 mb-1">
-                    <span>WISE AI Streaming Node</span>
+                    <span>OneWise AI Streaming Node</span>
                     <span className="text-brand-600 font-bold">780ms (Real-time)</span>
                   </div>
                   <div className="w-full h-2 bg-brand-100 rounded-full overflow-hidden">

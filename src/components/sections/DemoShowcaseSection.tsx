@@ -157,7 +157,7 @@ export const DemoShowcaseSection: React.FC = () => {
           </div>
 
           <h2 className="font-heading text-[2rem] sm:text-[2.5rem] lg:text-[3rem] font-bold text-slate-900 leading-[1.12]">
-            Hear how WISE AI handles live calls
+            Hear how OneWise AI handles live calls
           </h2>
 
           <p className="text-base text-slate-600 leading-[1.7]">
@@ -263,7 +263,7 @@ export const DemoShowcaseSection: React.FC = () => {
                       {activeScenario.title}
                     </h4>
                     <p className="text-[11px] text-signal-300 font-medium mt-0.5">
-                      WISE AI Assistant • Canadian SIP Trunk
+                      OneWise AI Assistant • Canadian SIP Trunk
                     </p>
 
                     {/* Big Interactive Audio Play / Pause Pill Button */}
@@ -352,7 +352,7 @@ export const DemoShowcaseSection: React.FC = () => {
                           >
                             <div className="flex items-center justify-between gap-2 mb-1">
                               <span className={`font-bold text-[10px] ${isAgent ? 'text-signal-400' : 'text-brand-100'}`}>
-                                {isAgent ? 'WISE AI Voice' : activeScenario.callerName}
+                                {isAgent ? 'OneWise AI Voice' : activeScenario.callerName}
                               </span>
                               <span className={`text-[9px] font-mono ${isAgent ? 'text-slate-400' : 'text-brand-200'}`}>
                                 {turn.timestamp}

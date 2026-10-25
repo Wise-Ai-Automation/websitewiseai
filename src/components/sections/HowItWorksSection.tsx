@@ -202,7 +202,7 @@ export const HowItWorksSection: React.FC = () => {
                   {currentPhase.timeline}
                 </span>
                 <span className="text-xs font-semibold text-slate-500">
-                  Turnkey Managed by WISE AI
+                  Turnkey Managed by OneWise AI
                 </span>
               </div>
 

@@ -380,7 +380,7 @@ export const HeroSection: React.FC = () => {
                   <div className="flex justify-start">
                     <div className="max-w-[85%] rounded-2xl rounded-tl-sm px-3.5 py-2.5 bg-[#1e2d45] border border-brand-900/60 shadow-sm">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-[10px] font-bold text-signal-400 uppercase tracking-wide">Maya · WISE AI</span>
+                        <span className="text-[10px] font-bold text-signal-400 uppercase tracking-wide">Maya · OneWise AI</span>
                         <span className="text-[10px] text-slate-500 font-mono ml-auto">00:03</span>
                       </div>
                       <p className="text-[12px] text-slate-200 leading-[1.55] font-medium">
@@ -406,7 +406,7 @@ export const HeroSection: React.FC = () => {
                   <div className="flex justify-start">
                     <div className="max-w-[85%] rounded-2xl rounded-tl-sm px-3.5 py-2.5 bg-[#1e2d45] border border-brand-900/60 shadow-sm">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-[10px] font-bold text-signal-400 uppercase tracking-wide">Maya · WISE AI</span>
+                        <span className="text-[10px] font-bold text-signal-400 uppercase tracking-wide">Maya · OneWise AI</span>
                         <span className="text-[10px] text-slate-500 font-mono ml-auto">00:26</span>
                       </div>
                       <p className="text-[12px] text-slate-200 leading-[1.55] font-medium">

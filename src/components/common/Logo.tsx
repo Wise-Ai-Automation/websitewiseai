@@ -1,47 +1,43 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 interface LogoProps {
   className?: string
-  showText?: boolean
   size?: 'sm' | 'md' | 'lg'
+  /** Use on dark backgrounds (e.g. the footer) — wraps the full-color mark in a light chip so it stays legible against ink-950. */
+  onDark?: boolean
 }
 
 export const Logo: React.FC<LogoProps> = ({
   className = '',
-  showText = true,
-  size = 'md'
+  size = 'md',
+  onDark = false,
 }) => {
-  const iconSizes = {
-    sm: 'w-7 h-7',
-    md: 'w-8 h-8',
-    lg: 'w-10 h-10',
+  const heightClasses = {
+    sm: 'h-8',
+    md: 'h-10',
+    lg: 'h-12',
   }
 
-  const textSizes = {
-    sm: 'text-base',
-    md: 'text-lg',
-    lg: 'text-xl',
-  }
+  const img = (
+    <img
+      src="/onewise-ai-logo.png"
+      alt="OneWise AI"
+      className={`${heightClasses[size]} w-auto object-contain`}
+    />
+  )
 
   return (
-    <a href="#" className={`flex items-center gap-2.5 group select-none ${className}`}>
-      {/* Teal Star Logo Mark Matching Mockup */}
-      <div className={`relative ${iconSizes[size]} rounded-full bg-signal-500 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-200 shrink-0`}>
-        <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4 text-slate-950">
-          <path
-            d="M12 2L14.39 9.61L22 12L14.39 14.39L12 22L9.61 14.39L2 12L9.61 9.61L12 2Z"
-            fill="currentColor"
-          />
-        </svg>
-      </div>
-
-      {showText && (
-        <div className="flex items-center gap-1.5">
-          <span className={`font-bold text-slate-900 font-heading tracking-tight ${textSizes[size]}`}>
-            Wise AI <span className="font-semibold text-slate-700">Automation</span>
-          </span>
+    <Link to="/" className={`flex items-center group select-none shrink-0 ${className}`}>
+      {onDark ? (
+        <div className="px-3 py-1.5 rounded-xl bg-white shadow-sm group-hover:scale-105 transition-transform duration-200">
+          {img}
+        </div>
+      ) : (
+        <div className="group-hover:scale-105 transition-transform duration-200">
+          {img}
         </div>
       )}
-    </a>
+    </Link>
   )
 }

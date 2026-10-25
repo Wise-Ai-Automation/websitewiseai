@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website Design & Development | Wise AI Automation</title>
+<meta name="description" content="Modern websites for restaurants, small businesses, salons and service providers. Website design, booking, menus, lead capture and workflow automation by Wise AI Automation.">
+<style>
+:root{--navy:#10213a;--blue:#2563eb;--teal:#0d9488;--ink:#172337;--muted:#607086;--line:#e4eaf1;--bg:#f6f9fc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:white}a{color:inherit;text-decoration:none}.container{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.04em;color:var(--navy);font-size:1.1rem}.logo{height:38px;width:38px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;color:white;font-weight:900}.navlinks{display:flex;gap:25px;align-items:center;font-size:.92rem;color:#44536a}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:var(--blue);color:#fff;font-weight:750;border:1px solid var(--blue);cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-1px);filter:brightness(.96)}.btn.secondary{background:white;color:var(--navy);border-color:#cdd7e4}.menu-toggle{display:none;background:white;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.hero{background:radial-gradient(circle at 85% 20%,#d9f6f2 0,transparent 27%),radial-gradient(circle at 8% 0,#e7edff 0,transparent 30%),linear-gradient(180deg,#fbfdff,#f5f8fd);padding:76px 0 66px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 11px;border:1px solid #d5e4f4;background:#ffffffc9;border-radius:99px;color:#2453a5;font-size:.77rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.dot{width:8px;height:8px;background:var(--teal);border-radius:50%}h1{font-size:clamp(2.55rem,5vw,4.25rem);line-height:1.04;letter-spacing:-.055em;margin:20px 0;color:var(--navy)}.hero p{font-size:1.13rem;color:var(--muted);max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.trust{display:flex;gap:20px;flex-wrap:wrap;font-size:.88rem;color:#53647a}.trust span:before{content:"✓";color:var(--teal);font-weight:900;margin-right:7px}
+.mock{background:white;border:1px solid #dce5f0;border-radius:24px;padding:18px;box-shadow:0 28px 70px #17375a1b;transform:rotate(1deg)}.mock-top{display:flex;justify-content:space-between;align-items:center;padding:3px 3px 15px;border-bottom:1px solid var(--line);font-size:.8rem;color:var(--muted)}.mock-dots{display:flex;gap:5px}.mock-dots i{width:7px;height:7px;border-radius:50%;background:#c6d2e0}.preview{padding:22px 5px 5px}.preview h3{margin:0;color:var(--navy);font-size:1.35rem}.preview p{font-size:.83rem;margin:3px 0 18px}.preview-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}.preview-card{padding:15px;border:1px solid var(--line);border-radius:14px;background:#fbfdff}.preview-card b{display:block;margin:8px 0 2px;font-size:.92rem}.preview-card small{color:var(--muted)}.mini-icon{width:36px;height:36px;display:grid;place-items:center;background:#e9f2ff;border-radius:11px;font-size:1.15rem}.preview-bar{height:8px;border-radius:8px;background:#e9eef5;margin-top:10px;overflow:hidden}.preview-bar i{display:block;width:72%;height:100%;background:linear-gradient(90deg,var(--blue),var(--teal));border-radius:8px}
+section{padding:76px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}.section-head h2{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.15;letter-spacing:-.04em;color:var(--navy);margin:0 0 12px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;padding:24px;background:white;box-shadow:0 8px 25px #1a355008}.card .icon{width:48px;height:48px;display:grid;place-items:center;background:#edf4ff;border-radius:14px;font-size:1.45rem}.card h3{margin:15px 0 8px;color:var(--navy);font-size:1.15rem}.card p{color:var(--muted);font-size:.94rem;margin:0}.card ul{padding-left:18px;color:#53647a;font-size:.9rem}.soft{background:var(--bg)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.feature-list{display:grid;gap:17px}.feature{display:flex;gap:14px}.check{flex:none;width:30px;height:30px;border-radius:9px;background:#dff7f1;color:#087f73;display:grid;place-items:center;font-weight:900}.feature h3{margin:0 0 4px;color:var(--navy);font-size:1rem}.feature p{margin:0;color:var(--muted);font-size:.92rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:23px;border-radius:17px;background:white;border:1px solid var(--line)}.num{font-size:.78rem;color:var(--blue);font-weight:850;letter-spacing:.1em}.step h3{color:var(--navy);margin:8px 0}.step p{color:var(--muted);font-size:.93rem;margin:0}
+.pricing-note{max-width:760px;margin:0 auto;padding:25px;border-radius:18px;background:#eff6ff;border:1px solid #d5e5fb;text-align:center}.pricing-note h3{color:var(--navy);margin:0 0 8px}.pricing-note p{color:var(--muted);margin:0 0 15px}
+.faq{max-width:850px;margin:auto;display:grid;gap:10px}.faq details{border:1px solid var(--line);border-radius:13px;padding:17px 19px;background:white}.faq summary{font-weight:750;color:var(--navy);cursor:pointer}.faq p{color:var(--muted);margin:12px 0 0}
+.contact{background:var(--navy);color:white;padding:70px 0}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}.contact h2{font-size:2.4rem;line-height:1.1;letter-spacing:-.04em;margin:0 0 15px}.contact p{color:#c8d5e5}.contact-form{background:white;border-radius:20px;padding:25px;color:var(--ink)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.84rem;font-weight:750;color:#34445a}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d5deea;border-radius:10px;font:inherit;background:white;color:var(--ink)}.field textarea{min-height:100px;resize:vertical}.form-status{font-size:.87rem;color:var(--teal);margin-top:12px;display:none}
+footer{padding:24px 0;color:#66768b;font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:850px){.hero-grid,.two-col,.contact-grid{grid-template-columns:1fr}.hero-grid{gap:35px}.cards{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;left:0;right:0;top:76px;padding:18px 4%;background:white;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu-toggle{display:block}.nav>.btn{display:none}.mock{max-width:600px;margin:auto}.steps{grid-template-columns:1fr}.hero{padding-top:55px}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.hero{padding:48px 0}.preview-cards{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:55px 0}.contact h2{font-size:2rem}.mock{padding:12px}.trust{gap:10px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#top"><span class="logo">W</span><span>Wise AI <span style="color:#0d9488">Automation</span></span></a>
+  <nav class="navlinks" id="navlinks"><a href="#services">Website Services</a><a href="#industries">Industries</a><a href="#process">Our Process</a><a href="#faq">FAQs</a></nav>
+  <a class="btn" href="#contact">Get a Website Quote</a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">Menu</button>
+ </div>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow"><span class="dot"></span> Proudly Canadian · Built for Canadian Business</div>
+   <h1>A Better Website.<br>A Smarter Business.</h1>
+   <p>Modern, mobile-friendly websites for restaurants, small businesses and service providers — with booking, lead capture and workflow automation options to help your business run smoothly.</p>
+   <div class="actions"><a class="btn" href="#contact">Get a Custom Quote ↗</a><a class="btn secondary" href="#services">Explore Website Services</a></div>
+   <div class="trust"><span>Mobile-friendly design</span><span>Built around your goals</span><span>Automation-ready</span></div>
+  </div>
+  <div class="mock" aria-label="Website service dashboard preview">
+   <div class="mock-top"><span>WISE WEBSITE STUDIO</span><span class="mock-dots"><i></i><i></i><i></i></span></div>
+   <div class="preview"><h3>Your business, online.</h3><p>A clear, professional experience for every customer.</p>
+    <div class="preview-cards">
+     <div class="preview-card"><div class="mini-icon">🍽️</div><b>Digital Menu</b><small>Showcase your best dishes</small><div class="preview-bar"><i style="width:86%"></i></div></div>
+     <div class="preview-card"><div class="mini-icon">📅</div><b>Online Booking</b><small>Make appointments easier</small><div class="preview-bar"><i style="width:70%"></i></div></div>
+     <div class="preview-card"><div class="mini-icon">🧾</div><b>Quote Requests</b><small>Turn visits into leads</small><div class="preview-bar"><i style="width:78%"></i></div></div>
+     <div class="preview-card"><div class="mini-icon">⚙️</div><b>Automations</b><small>Connect your business tools</small><div class="preview-bar"><i style="width:92%"></i></div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="services">
+ <div class="container">
+  <div class="section-head"><h2>Websites built for the way you do business</h2><p>Start with a professional website, then add the features and integrations that make sense for your business.</p></div>
+  <div class="cards">
+   <article class="card"><div class="icon">🍽️</div><h3>Restaurant Websites</h3><p>Help customers discover your restaurant, explore your menu and contact you.</p><ul><li>Digital menu and food gallery</li><li>Hours, location and map</li><li>Reservation or online-ordering integrations</li><li>Catering and event inquiry forms</li></ul></article>
+   <article class="card"><div class="icon">🏪</div><h3>Small Business Websites</h3><p>Build trust with a polished online presence that clearly explains what you offer.</p><ul><li>Home, About and Services pages</li><li>Contact and quote-request forms</li><li>Google Maps and social links</li><li>Basic on-page SEO setup</li></ul></article>
+   <article class="card"><div class="icon">📅</div><h3>Booking & Service Websites</h3><p>Make it easier for customers to book services and manage appointments.</p><ul><li>Appointment booking integration</li><li>Service and staff selection</li><li>Confirmation and reminder workflows</li><li>Rescheduling and cancellation links</li></ul></article>
+   <article class="card"><div class="icon">🛍️</div><h3>Online Stores</h3><p>Present products online and connect your store to suitable commerce tools.</p><ul><li>Product catalogue</li><li>Shopping cart and checkout integration</li><li>Order confirmation emails</li><li>Inventory and fulfilment workflows</li></ul></article>
+   <article class="card"><div class="icon">🧰</div><h3>Home & Local Services</h3><p>Help local customers request estimates and get in touch quickly.</p><ul><li>Service area and project gallery</li><li>Quote and consultation forms</li><li>Lead notifications</li><li>Follow-up task automation</li></ul></article>
+   <article class="card"><div class="icon">🤖</div><h3>Website + AI Automation</h3><p>Connect your website to business workflows to reduce repetitive administration.</p><ul><li>Website FAQ chatbot</li><li>CRM lead capture</li><li>Email and task automation</li><li>Reporting and system integrations</li></ul></article>
+  </div>
+ </div>
+</section>
+<section class="soft" id="industries">
+ <div class="container two-col">
+  <div><div class="eyebrow">Made for growing businesses</div><h2 style="font-size:clamp(2rem,3.5vw,3rem);line-height:1.12;letter-spacing:-.045em;color:var(--navy);margin:18px 0">Your industry. Your goals. Your website.</h2><p style="color:var(--muted)">We shape each website around how customers find you, what they need to do, and the tools your team already uses.</p><a class="btn" href="#contact">Tell Us About Your Project</a></div>
+  <div class="feature-list">
+   <div class="feature"><div class="check">✓</div><div><h3>Restaurants, cafés & catering</h3><p>Menus, reservation links, event enquiries and location details.</p></div></div>
+   <div class="feature"><div class="check">✓</div><div><h3>Salons, spas & wellness</h3><p>Services, staff profiles, online booking and reminder integrations.</p></div></div>
+   <div class="feature"><div class="check">✓</div><div><h3>Contractors & home services</h3><p>Project galleries, service pages, quote forms and lead follow-up.</p></div></div>
+   <div class="feature"><div class="check">✓</div><div><h3>Consultants & professional services</h3><p>Credibility-focused pages, consultations, enquiry forms and CRM workflows.</p></div></div>
+   <div class="feature"><div class="check">✓</div><div><h3>Retail & local shops</h3><p>Product showcases, store information and e-commerce options.</p></div></div>
+  </div>
+ </div>
+</section>
+<section id="process">
+ <div class="container">
+  <div class="section-head"><h2>From idea to launch</h2><p>A straightforward process with a clear scope before work begins.</p></div>
+  <div class="steps">
+   <div class="step"><div class="num">STEP 01</div><h3>Discover & plan</h3><p>We learn about your business, customers, pages, features, content and integrations.</p></div>
+   <div class="step"><div class="num">STEP 02</div><h3>Design & build</h3><p>We create a responsive website, organize content and configure the agreed functionality.</p></div>
+   <div class="step"><div class="num">STEP 03</div><h3>Test & launch</h3><p>We test on mobile and desktop, connect your domain and analytics where included, and hand over access.</p></div>
+  </div>
+ </div>
+</section>
+<section class="soft" id="pricing">
+ <div class="container"><div class="pricing-note"><h3>Custom website pricing</h3><p>Every project is different. Your quote depends on page count, content, booking or ordering features, e-commerce, integrations and ongoing support. Hosting, domains and third-party subscriptions can be quoted separately.</p><a class="btn" href="#contact">Request a Custom Quote</a></div></div>
+</section>
+<section id="faq">
+ <div class="container"><div class="section-head"><h2>Frequently asked questions</h2><p>What to know before starting your website project.</p></div>
+  <div class="faq">
+   <details><summary>Can you build a website for my restaurant?</summary><p>Yes. A restaurant website can include a digital menu, gallery, hours, location, reservation links, online-ordering integration and catering inquiry forms.</p></details>
+   <details><summary>Can customers book appointments on my website?</summary><p>Yes. We can integrate a suitable booking platform or scope a custom booking workflow. Availability, reminders and payments depend on the selected provider and integration.</p></details>
+   <details><summary>Do you provide hosting and domain registration?</summary><p>These can be included in a managed package or arranged separately. The final quote will specify ownership, renewal costs and support responsibilities.</p></details>
+   <details><summary>Can you connect the website to my CRM or other tools?</summary><p>Yes, where suitable integrations or APIs are available. Each integration is reviewed for feasibility, cost, access and ongoing vendor fees.</p></details>
+   <details><summary>Will my website work on phones?</summary><p>Responsive layouts for mobile, tablet and desktop are part of the proposed website scope.</p></details>
+  </div>
+ </div>
+</section>
+<section class="contact" id="contact">
+ <div class="container contact-grid">
+  <div><div class="eyebrow" style="background:#1b3454;border-color:#35506f;color:#c9e5ff">Let's build something useful</div><h2>Tell us what your business needs.</h2><p>Share a few details about your website. Wise AI Automation can use them to prepare a project scope and custom quote.</p><p>✓ Clear scope and deliverables<br>✓ Options for booking and business integrations<br>✓ Website and workflow automation in one place</p></div>
+  <form class="contact-form" id="quoteForm">
+   <h3 style="margin:0 0 18px;color:var(--navy)">Request a website quote</h3>
+   <div class="form-grid">
+    <div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Full name"></div>
+    <div class="field"><label for="business">Business name *</label><input id="business" name="business" required placeholder="Business name"></div>
+    <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+    <div class="field"><label for="type">Business type *</label><select id="type" name="type" required><option value="">Choose one</option><option>Restaurant / café</option><option>Small business</option><option>Salon / spa</option><option>Home services</option><option>Retail / online store</option><option>Professional services</option><option>Other</option></select></div>
+    <div class="field full"><label for="features">What do you need?</label><select id="features" name="features"><option>Business website</option><option>Restaurant menu and reservations</option><option>Appointment booking</option><option>Online store</option><option>Website chatbot or AI automation</option><option>Website redesign</option><option>Not sure yet — advise me</option></select></div>
+    <div class="field full"><label for="details">Project details</label><textarea id="details" name="details" placeholder="Pages, features, timeline, existing website..."></textarea></div>
+    <div class="field full"><button class="btn" type="submit" style="width:100%">Prepare Email Inquiry ↗</button><p style="font-size:.78rem;color:#64748b;margin:0">This demo opens your email app; it does not submit data to a server.</p><div class="form-status" id="formStatus" role="status"></div></div>
+   </div>
+  </form>
+ </div>
+</section>
+</main>
+<footer><div class="container footer-row"><div><strong style="color:var(--navy)">Wise AI Automation</strong> · Proudly Canadian — Built for Canadian Business</div><div><a href="#services">Services</a> &nbsp; · &nbsp; <a href="#contact">Contact</a></div><div>© <span id="year"></span> Wise AI Automation</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const d=new FormData(this);
+ const subject=encodeURIComponent('Website Quote Request — '+d.get('business'));
+ const body=encodeURIComponent(
+ 'Website quote request for Wise AI Automation\\n\\n'+
+ 'Name: '+d.get('name')+'\\nBusiness: '+d.get('business')+'\\nEmail: '+d.get('email')+
+ '\\nBusiness type: '+d.get('type')+'\\nRequested service: '+d.get('features')+
+ '\\nProject details: '+(d.get('details')||'Not provided')+'\\n'
+ );
+ document.getElementById('formStatus').style.display='block';
+ document.getElementById('formStatus').textContent='Your email app should open with the inquiry draft. Please verify the recipient email before sending.';
+ // Replace the placeholder recipient with the company's verified contact email before launch.
+ window.location.href='mailto:hello@binumortgages.ca?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>

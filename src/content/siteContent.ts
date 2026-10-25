@@ -98,15 +98,15 @@ export interface FaqItem {
 
 export const siteContent = {
   brand: {
-    name: 'Wise AI Automation',
+    name: 'OneWise AI',
     tagline: 'AI Systems That Do the Work For You',
     location: 'Toronto, Ontario — serving all of Canada 🇨🇦',
     contact: {
       phone: '+1 416 555 0142',
       displayPhone: '+1 (416) 555-0142',
       alternatePhone: '+1 (226) 201-0271',
-      whatsappUrl: 'https://wa.me/12262010271?text=Hi%20Wise%20AI%20Automation%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call',
-      whatsappMessage: 'Hi Wise AI Automation, I\'d like to book a free strategy call',
+      whatsappUrl: 'https://wa.me/12262010271?text=Hi%20OneWise%20AI%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call',
+      whatsappMessage: 'Hi OneWise AI, I\'d like to book a free strategy call',
       email: 'hello@wiseaiautomation.ca',
       operatingHours: 'Monday – Friday, 8:00 AM – 7:00 PM EST (24/7 AI System Operation)',
     },
@@ -157,7 +157,7 @@ export const siteContent = {
 
   hero: {
     headline: 'Voice agents that sound human and work like your best employee.',
-    subheadline: 'WISE AI builds custom voice AI agents that answer every call, qualify every lead and book every appointment, 24/7, in your brand\'s voice.',
+    subheadline: 'OneWise AI builds custom voice AI agents that answer every call, qualify every lead and book every appointment, 24/7, in your brand\'s voice.',
     primaryCta: 'Book a free call',
     secondaryCta: 'View live call simulation',
     trustPoints: [
@@ -166,7 +166,7 @@ export const siteContent = {
       'Connects to your CRM and calendar',
     ],
     sampleCall: {
-      agentName: 'WISE AI Practice Assistant',
+      agentName: 'OneWise AI Practice Assistant',
       customerName: 'Marcus Vance',
       status: 'Call Completed • 1m 24s',
       transcript: [
@@ -265,7 +265,7 @@ export const siteContent = {
 
   theProblem: {
     statement: 'Every missed call is a missed customer.',
-    subtext: 'When customers call, they want an immediate answer. Voicemails go unreturned, hold times frustrate callers, and staff get overwhelmed. WISE AI solves this with custom voice agents.',
+    subtext: 'When customers call, they want an immediate answer. Voicemails go unreturned, hold times frustrate callers, and staff get overwhelmed. OneWise AI solves this with custom voice agents.',
     stats: [
       {
         id: 'availability',
@@ -542,7 +542,7 @@ export const siteContent = {
 
   integrations: {
     heading: 'Plugs into the tools you already use',
-    subheading: 'WISE AI connects seamlessly to your existing telephony, CRM, and calendar stack without forcing your team to learn a new interface.',
+    subheading: 'OneWise AI connects seamlessly to your existing telephony, CRM, and calendar stack without forcing your team to learn a new interface.',
     categories: [
       {
         category: 'CRMs',
@@ -728,8 +728,8 @@ export const siteContent = {
     },
     {
       id: 'faq-3',
-      question: 'Is WISE AI compliant with Canadian privacy laws (PIPEDA)?',
-      answer: 'Yes. As a Canadian business based in Ontario, WISE AI is built to comply with PIPEDA (Personal Information Protection and Electronic Documents Act) and provincial health privacy standards (such as Ontario\'s PHIPA). We offer data residency options to ensure your customer data stays strictly on Canadian soil.'
+      question: 'Is OneWise AI compliant with Canadian privacy laws (PIPEDA)?',
+      answer: 'Yes. As a Canadian business based in Ontario, OneWise AI is built to comply with PIPEDA (Personal Information Protection and Electronic Documents Act) and provincial health privacy standards (such as Ontario\'s PHIPA). We offer data residency options to ensure your customer data stays strictly on Canadian soil.'
     },
     {
       id: 'faq-4',
@@ -749,7 +749,7 @@ export const siteContent = {
     {
       id: 'faq-7',
       question: 'What phone systems and CRMs does it integrate with?',
-      answer: 'WISE AI connects directly to major Canadian and international telephony systems (Twilio, RingCentral, Vonage, Bell/Rogers SIP, traditional PBX) and CRMs (HubSpot, Salesforce, GoHighLevel, Jane App, Clio, Jobber, Zoho).'
+      answer: 'OneWise AI connects directly to major Canadian and international telephony systems (Twilio, RingCentral, Vonage, Bell/Rogers SIP, traditional PBX) and CRMs (HubSpot, Salesforce, GoHighLevel, Jane App, Clio, Jobber, Zoho).'
     },
     {
       id: 'faq-8',
@@ -776,7 +776,7 @@ export const siteContent = {
   },
 
   footer: {
-    description: 'Wise AI Automation designs, builds, and deploys intelligent AI systems that do the work for you — from voice telephony to end-to-end operational automation. Based in Toronto, Ontario.',
+    description: 'OneWise AI designs, builds, and deploys intelligent AI systems that do the work for you — from voice telephony to end-to-end operational automation. Based in Toronto, Ontario.',
     links: {
       solutions: [
         { label: 'Voice AI Agents', href: '/services/voice-ai-agents' },

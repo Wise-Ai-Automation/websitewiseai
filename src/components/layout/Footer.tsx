@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <Logo size="md" />
+              <Logo size="md" onDark />
               <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-brand-950 text-brand-200 text-xs font-semibold border border-brand-800/50">
                 <span>🇨🇦</span>
                 <span>Ontario, Canada</span>
@@ -182,7 +182,7 @@ export const Footer: React.FC = () => {
 
             <div className="text-xs text-slate-600 space-y-3 max-h-80 overflow-y-auto pr-2 leading-relaxed">
               <p>
-                <strong>Canadian Data Protection Commitment:</strong> WISE AI Inc. operates out of Ontario, Canada, in compliance with PIPEDA (Personal Information Protection and Electronic Documents Act) and applicable provincial privacy standards such as Ontario's PHIPA.
+                <strong>Canadian Data Protection Commitment:</strong> OneWise AI Inc. operates out of Ontario, Canada, in compliance with PIPEDA (Personal Information Protection and Electronic Documents Act) and applicable provincial privacy standards such as Ontario's PHIPA.
               </p>
               <p>
                 All voice telephony audio streams and digital transcripts are transmitted over TLS 1.3 encryption and stored with AES-256 standards. Customer phone numbers, recordings, and caller CRM data are strictly owned by your organization.

@@ -27,7 +27,7 @@ export const ProblemOutcomeSection: React.FC = () => {
           </h2>
 
           <p className="text-base text-slate-500 leading-[1.7] max-w-2xl mx-auto">
-            When high-intent customers or patients call, they expect immediate answers. If your phone rings out or goes to voicemail, 85% hang up and call your competitor. Here is what changes when you deploy WISE AI.
+            When high-intent customers or patients call, they expect immediate answers. If your phone rings out or goes to voicemail, 85% hang up and call your competitor. Here is what changes when you deploy OneWise AI.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export const ProblemOutcomeSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 2: With WISE AI Voice Agents */}
+          {/* Card 2: With OneWise AI Voice Agents */}
           <div className="rounded-3xl bg-white border-2 border-brand-500 p-7 sm:p-9 shadow-xl shadow-brand-500/10 flex flex-col justify-between relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-brand-600" />
 
@@ -115,7 +115,7 @@ export const ProblemOutcomeSection: React.FC = () => {
                     <PhoneCall className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900">With WISE AI Voice Agents</h3>
+                    <h3 className="text-lg font-bold text-slate-900">With OneWise AI Voice Agents</h3>
                     <p className="text-xs text-brand-600 font-semibold">Autonomous Inbound Coverage 24/7</p>
                   </div>
                 </div>

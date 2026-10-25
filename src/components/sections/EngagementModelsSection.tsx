@@ -8,7 +8,7 @@ export const EngagementModelsSection: React.FC = () => {
   const handleSelectPlan = (planName: string) => {
     const messageInput = document.getElementById('message') as HTMLTextAreaElement | null
     if (messageInput) {
-      messageInput.value = `Hi WISE AI, I am interested in discussing the ${planName} model for our Canadian business.`
+      messageInput.value = `Hi OneWise AI, I am interested in discussing the ${planName} model for our Canadian business.`
       messageInput.dispatchEvent(new Event('input', { bubbles: true }))
     }
     const formSection = document.getElementById('book-demo')

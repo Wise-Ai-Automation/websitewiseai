@@ -19,7 +19,7 @@ export const ServiceDetailPage: React.FC = () => {
 
   useEffect(() => {
     if (service) {
-      document.title = `${service.name} | Wise AI Automation`
+      document.title = `${service.name} | OneWise AI`
     }
   }, [service])
 

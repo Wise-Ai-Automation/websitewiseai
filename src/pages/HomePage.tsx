@@ -35,7 +35,7 @@ export const HomePage: React.FC = () => {
       {/* 8. Security & Canadian Compliance (PIPEDA, SOC 2, HIPAA, Sovereignty) */}
       <SecurityComplianceSection />
 
-      {/* 9. Why WISE AI */}
+      {/* 9. Why OneWise AI */}
       <WhyWiseAiSection />
 
       {/* 10. Engagement Models */}
